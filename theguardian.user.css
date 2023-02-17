@@ -8,7 +8,8 @@
 
 @-moz-document url-prefix("https://www.theguardian.com") {
     .top-banner-ad-container,
-    body > div:last-child {
+    .ad_unit, .ad-slot,
+    [id^=sp_message_container] {
         display: none !important;
     }
 }
