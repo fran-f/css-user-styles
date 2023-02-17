@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           Dictionary and Thesaurus.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Removes cruft from Dictionary.com and Thesaurus.com
+@author         fran-f
+==/UserStyle== */
+
+@-moz-document domain("dictionary.com"),
+domain("thesaurus.com") {
+
+    #quiz,
+    #quizzes,
+    #onetrust-consent-sdk {
+        display: none;
+    }
+
+    [data-testid=quiz-module],
+    [data-testid=synonym-of-the-day],
+    aside {
+        display: none !important;
+    }
+}
