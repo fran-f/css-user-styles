@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           The Guardian
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Hide cookie banner from The Guardian
+@author         fran-f
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.theguardian.com") {
+    .top-banner-ad-container,
+    body > div:last-child {
+        display: none !important;
+    }
+}
