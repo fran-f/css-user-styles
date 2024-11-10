@@ -9,7 +9,16 @@
 @-moz-document url-prefix("https://www.theguardian.com") {
     .top-banner-ad-container,
     .ad_unit, .ad-slot,
+    #top-right-ad-slot,
     [id^=sp_message_container] {
         display: none !important;
+    }
+    .sp-message-open {
+      height: auto !important;
+      width: auto !important;
+    }
+    .sp-message-open body {
+        overflow: auto !important;
+        position: initial !important;
     }
 }
